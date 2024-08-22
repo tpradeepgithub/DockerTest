@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: custom-nginx
+    ports:
+      - "8081:80"
+    volumes:
+      - ./html:/var/opt/nginx/html
+
